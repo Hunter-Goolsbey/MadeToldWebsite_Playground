@@ -1,0 +1,133 @@
+
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.3s;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 25px;
+  border-radius: 0px;
+}
+
+[class*="card_"] {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+[class*="PartnerCard_"] {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 15%;
+  width: 21%;
+}
+[class*="PartnerCard_"] img {
+  border-radius: 5px 5px 0 0;
+  height:330px;
+  width:100%;
+}
+[class*="PartnerCard_"]:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  /*Cool Effect
+  padding: 12px;
+  */
+}
+hr {
+  border: 1px solid grey;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+img {
+  border-radius: 5px 5px 0 0;
+  height:550px;
+  width: 400px;
+}
+.scrollable {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* On mouse-over, add a deeper shadow */
+[class*="card_"]:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  /*Cool Effect
+  padding: 12px;
+  */
+}
+
+/* Add some padding inside the card container */
+[class*="container_"] {
+  padding: 2px 16px;
+}
+
+
+#navbar-right input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+  margin-right: 3%;
+}
+
+
+#navbar-right a:hover {
+  background: #f7c222;
+  color: black;
+  height:100%;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 120px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+.main form {
+  padding: 1%;
+}
+@media screen and (max-width: 600px) {
+  .navbar a, 
+  .navbar {float: none;}
+  .main {margin-top: 30%}
+}

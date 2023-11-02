@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="AlphaGeneral.css">
+  <title>Alpha Home</title>
+</head>
+
+<body>
+  <div id="navbar">
+  <a href=AlphaHome.html id="logo">Hunter Goolsbey</a>
+  <div id="navbar-right">
+    <input type="text" placeholder="Search...">
+    <a class="active" href=AlphaHome.html>Home</a>
+    <a href="AlphaProducts.php">Bio</a>
+    <a href="AlphaProductPage.php">Projects</a>
+    <a href=AlphaContact.php>Contact</a>
+  </div>
+</div>
+  <div class = main>
+    <h1>||Welcome||</h1>
+    <h2>\\Thank you for checking out my website\\</h2>
+    <h2>let me know what you think, or if you have any suggestions / comments, please leave them below.</h2>
+    
+    
+    <form action="AlphaRequest.php" method="POST">
+ 	  <h3>-|Sign Up For Emails|-</h3>
+ 	  <label for="fname">First name:</label><br>
+  	    <input type="text" id="fname" name="fname" value="John"><br>
+  	  <label for="lname">Last name:</label><br>
+  		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+  	  <label for="email">Email:</label><br>
+  		<input type="text" id="email" name="email" value="John.Doe@gmail.com"><br><br>
+  	  <label for="Newsletter_Status">I would like to sign up for weekly sales and new products: </label>
+  	    <input type="checkbox" id="Newsletter_Status" name="Newsletter_Status" value="1"><br><br>
+  		<input type="submit" name= "submit" value="Submit">
+	</form>
+	
+   
+    
+  </div>
+  <script type="text/javascript" src="Alpha.js"></script>
+</body>
+
+</html>
